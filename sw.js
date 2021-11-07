@@ -3,9 +3,7 @@
 
 const CACHE_NAME = 'lab-7-starter';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/assets/styles/main.css'
+  '/'
 ]
 
 // Once the service worker has been installed, feed it some initial URLs to cache
@@ -22,7 +20,7 @@ self.addEventListener('install', function (event) {
   );
 });
 
-/**
+/**1
  * Once the service worker 'activates', this makes it so clients loaded
  * in the same scope do not need to be reloaded before their fetches will
  * go through this service worker
